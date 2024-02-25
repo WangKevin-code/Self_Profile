@@ -8,7 +8,7 @@ import { RouterLink } from 'vue-router'
 
         <RouterLink class="col" v-for="info in HomeCardData" :to="'/Content/' + info.view">
             <div class="card bg-dark text-white fw-bold CardInfo">
-                <img :src="'/src/Images/' + info.img" class="card-img" style="height: 20rem;">
+                <img :src="'../src/Images/' + info.img" class="card-img" style="height: 20rem;">
                 <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, .5);">
                     <h3 class="card-title fw-bold">{{ info.title }}</h3>
                     <p class="card-text">{{ info.content }}</p>
