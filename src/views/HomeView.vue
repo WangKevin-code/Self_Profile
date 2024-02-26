@@ -3,10 +3,8 @@ import HomeCardData from '@/JsonData/HomeCardData.js'
 import { RouterLink } from 'vue-router'
 
 const getImage = (img) => {
-    const imageUrl = new URL('../Images/' + img, import.meta.url).href;
     console.log(import.meta.url);
-    console.log(imageUrl);
-    return imageUrl;
+    return new URL('../Images/' + img, import.meta.url).href;;
 }
 </script>
 
